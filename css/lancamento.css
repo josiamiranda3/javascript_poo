@@ -1,0 +1,143 @@
+
+ul.modelcars {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ul.modelcars li {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    vertical-align: top;
+}
+
+img.photocar {
+    display: block;
+    width: 250px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1b357e;
+}
+
+.infocar div {
+    display: inline-block;
+}
+
+.info {
+    width: 200px;
+    vertical-align: top;
+}
+
+.textmodel {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #1351d8;
+    
+}
+.textprice {
+    display: block;
+    text-align: left;
+    font-size: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  td:nth-child(1) {  
+    font-weight: 700;
+    width: 40%;
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+div#compare {
+    position: absolute;
+    display: none;
+    width: 50vw;
+    max-width: 800px;
+    min-width: 400px;
+    height: 80vh;
+    max-height: 700px;
+    min-height: 350px;
+    background: #fff;
+    top: calc(100vh - 80%);
+    left: 25vw;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+    box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+}
+
+
+
+/* Responsividade da tabela */
+/* @media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    td:nth-child(1) {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+    th, td {
+        padding: 5px;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+td:nth-child(1) {
+    font-weight: 700;
+    width: 40%;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+@media (max-width: 768px) {
+    div#compare {
+        width: 95vw;
+        height: auto;
+        max-height: 80vh;
+        padding: 5px;
+    }
+} */

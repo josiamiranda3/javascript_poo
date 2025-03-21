@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford</title>    
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script src="js/form.js"></script>
+</head>
+<body>
+    <header>       
+        <div>
+            <img src="img/logo-ford-256.png" width="150" class="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="lancamento.html">Lançamento</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="forms">
+            <div>
+                <img src="img/xls 2.2 diesel.jpg">
+            </div>
+            <div>
+                <h2 class="titulo">Sobre Você</h2>
+            <form onsubmit="Post(this);">
+                <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
+                <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
+                <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
+                <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
+                <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                <select name="contato" class="fordform" required>
+                    <option selected>COMO DESEJA SER CONTATADO</option>
+                    <option>TELEFONE</option>
+                    <option>E-MAIL</option>
+                </select>
+            <button type="submit">Enviar</button>
+            </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav id="social">
+            <ul>
+                <li><span class="redesociais">Redes Sociais</span></li>
+                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
+                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
+                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+            </ul>
+        </nav>
+        <div>
+           <img src="img/ford-96.png" width="70"  />
+        </div>
+    </footer>    
+</body>
+</html>
