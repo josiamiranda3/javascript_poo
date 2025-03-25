@@ -1,0 +1,138 @@
+/* Responsividade para telas grandes (acima de 1640px) */
+@media (max-width: 1640px) {
+    header .logo {
+        width: 120px; /* Ajusta o tamanho da logo */
+    }
+
+    header nav ul li {
+        font-size: 14px; /* Diminui o tamanho da fonte */
+    }
+}
+
+/* Responsividade para tablets (máximo 1098px) */
+@media (max-width: 1098px) {
+    header {
+        height: 10vh;
+        padding: 0 10px;
+    }
+
+    header .logo {
+        width: 120px;
+    }
+
+    header nav ul li {
+        font-size: 14px;
+    }
+
+    header nav a:hover {
+        font-size: 17px;
+    }
+
+    header nav {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between; /* Logo à esquerda, espaço vazio à direita */
+        align-items: center;
+        height: 10vh;
+        padding: 0 10px;
+        position: relative; /* Necessário para o posicionamento do nav */
+    }
+
+    /* Mantém o logo no canto esquerdo */
+    header .logo {
+        width: 10vw; /* Ou ajuste para um valor fixo (ex: 80px) */
+    }
+
+    /* Centraliza o nav no meio do header */
+    header nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /* Alinhamento preciso ao centro */
+    }
+
+    /* Estilização dos itens do menu */
+    header nav ul {
+        display: flex;
+        gap: 15px; /* Espaço entre os links */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+/* Responsividade para smartphones (máximo 650px) */
+@media (max-width: 650px) {
+    header {
+        height: 10vh;
+        padding: 0 10px;
+    }
+
+    header .logo {
+        width: 90px;
+    }
+
+    header nav {
+        width: 50vw;
+    }
+
+    header nav ul li {
+        font-size: 12px;
+    }
+
+    header nav a:hover {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para dispositivos com tela muito pequena (máximo 480px) */
+@media (max-width: 480px) {
+    header {
+        height: 8vh;
+        padding: 0 5px;
+    }
+
+    header .logo {
+        width: 80px;
+    }
+
+    header nav {
+        width: 60vw;
+    }
+
+    header nav ul li {
+        font-size: 12px;
+    }
+
+    header nav a:hover {
+        font-size: 13px;
+    }
+}
+
+/* Responsividade para telas menores (máximo 370px) */
+@media (max-width: 370px) {
+    header {
+        height: 8vh;
+        padding: 0 5px;
+    }
+
+    header .logo {
+        width: 70px;
+    }
+
+    header nav {
+        width: 70vw;
+    }
+
+    header nav ul li {
+        font-size: 10px;
+    }
+
+    header nav a:hover {
+        font-size: 12px;
+    }
+}
