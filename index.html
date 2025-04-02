@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford</title>    
-    <link href="css/reset.css" rel="stylesheet">
+    <!-- <link href="css/reset.css" rel="stylesheet"> -->
+    <!-- <link rel="icon" type="image/x-icon" href="./img/ford-96.png"> -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <!-- <link rel="stylesheet" href="./css/responsive.css"> -->
+     <link rel="stylesheet" href="./css/responsive.css">
     <script src="js/carousel.js"></script>
 </head>
 <body>
@@ -38,23 +40,27 @@
         <script>
              //insert each image on carousel
             carouselArr.push(new Carousel("./img/imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
-            carouselArr.push(new Carousel("./img/imagem_2.jpg","Ford a nossa história","#"));
-            carouselArr.push(new Carousel("./img/imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
+            carouselArr.push(new Carousel("./img/imagem_2.jpg","Ford a nossa história","https://corporate.ford.com/about/history.html"));
+            carouselArr.push(new Carousel("./img/imagem_3.jpg","Nova Ford Bronco Sport 2022","https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2022/bronco-sport/pdf/fbr-bronco-sport-2022-ficha-tecnica.pdf"));
             Carousel.Start(carouselArr);
         </script>
+
+        
     </main>
     <footer>
         <nav id="social">
             <ul>
+                <!-- falta colocar a linkagem em todas as redes socias, além de :hover quando efetuar o click para efeitos  -->
                 <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+                <li><a href="https://www.facebook.com/FordBrasil/?locale=pt_BR" title="Facebook" target="_blank"><img src="img/facebook-50.png"></a></li>
+                <li><a href="https://www.youtube.com/fordbrasil" title="YouTube" target="_blank"><img src="img/youtube-squared-50.png"></a></li>
+                <li><a href="https://www.instagram.com/fordbrasil/" title="Instagram" target="_blank"><img src="img/instagram-logo-50.png"></a></li>
             </ul>
         </nav>
         <div>
-           <img src="img/ford-96.png" width="70"  />
+           <img class="img_logo" src="img/ford-96.png" width="70"  />
         </div>
     </footer>    
 </body>
 </html>
+

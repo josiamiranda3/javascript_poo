@@ -1,8 +1,42 @@
+p {
+    text-align: center;
+    cursor: pointer;
+
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Posiciona o elemento para baixo */
+    animation: subir 1s ease-out forwards; /* Animação para subir */
+    
+}
+
+@keyframes subir {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Começa abaixo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Chega na posição normal */
+    }
+}
+
+p a { 
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: blue; /* Mantém a cor do texto padrão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    /* border: solid 2px gray; */
+    transition: color 0.3s ease;  
+    /* transição suave de cor */
+}
+p a:hover{
+    color: black; /* Muda a cor para preto ao passar o mouse */
+}
+
 
 ul.modelcars {
     display: block;
     text-align: center;
     margin-bottom: 40px;
+    /* background-color: black; */
 }
 
 ul.modelcars li {
@@ -15,12 +49,13 @@ ul.modelcars li {
 img.photocar {
     display: block;
     width: 250px;
+    /* border: solid 2px red; */
 }
 
 .checkbox {
     width: 30px;
     height: 30px;
-    border: 1px solid #1b357e;
+    /* border: 1px solid #1b357e; */
 }
 
 .infocar div {
@@ -47,21 +82,26 @@ img.photocar {
 
 table {
     border-collapse: collapse;
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2vh;
     margin-bottom: 10px;
+    /* background-color: rgb(25, 20, 106); */
   }
   
   th, td {
     text-align: left;
     padding: 8px;
+    /* background-color: black; */
   }
 
   td:nth-child(1) {  
     font-weight: 700;
     width: 40%;
+    /* background-color: #1351d8; */
+    /* background-color: rgb(20, 92, 44); */
   }
 
   tr:nth-child(even) {background-color: #f2f2f2;}
@@ -69,11 +109,19 @@ table {
 div#compare {
     position: absolute;
     display: none;
-    width: 50vw;
+    /* width: 50vw; */
     max-width: 800px;
+    /* maximo de largura */
     min-width: 400px;
-    height: 80vh;
+    /* minimo de largura */
+    /* altura anterior 80 vh; */
+    /* height: 67vh; */
     max-height: 700px;
+    /* maximo de altura */
+    /* min-height: 350px; atual, sendo a mudança esta ocorrendo para testar o processo da altura minima para redução 
+    em 430 */
+    /* min-height: 20px;  */
+    /* minimo de altura */
     min-height: 350px;
     background: #fff;
     top: calc(100vh - 80%);
@@ -82,6 +130,8 @@ div#compare {
     padding: 10px;
     -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
     box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+    /* background-color: rgb(9, 104, 99); */
+    /* background-color: green; */
 }
 
 
@@ -141,3 +191,51 @@ tr:nth-child(even) {
         padding: 5px;
     }
 } */
+
+button{
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.y-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(180, 148, 148, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    
+    /* Animação para aparecer e sumir */
+    animation: aparecerSumir 3.5s ease-in-out forwards;
+}
+
+@keyframes aparecerSumir {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    30% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+}
+
+  
+

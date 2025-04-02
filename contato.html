@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford</title>    
-    <link href="css/reset.css" rel="stylesheet">
+    <!-- <link href="css/reset.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/responsive.css">
     <script src="js/form.js"></script>
 </head>
 <body>
@@ -38,11 +39,11 @@
             <div>
                 <h2 class="titulo">Sobre Você</h2>
             <form onsubmit="Post(this);">
-                <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
-                <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
+                <input type="text" name="nome" id="nomeid" placeholder="NOME*" class="fordform" required>
+                <input type="email" name="email" placeholder="E-MAIL*" class="fordform" required>
                 <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
                 <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
-                <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                <input type="number" name="telefone" placeholder="TELEFONE*" class="fordform" required>
                 <select name="contato" class="fordform" required>
                     <option selected>COMO DESEJA SER CONTATADO</option>
                     <option>TELEFONE</option>
@@ -57,9 +58,9 @@
         <nav id="social">
             <ul>
                 <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+                <li><a href="https://www.facebook.com/FordBrasil/?locale=pt_BR" title="Facebook" target="_blank"><img src="img/facebook-50.png"></a></li>
+                <li><a href="https://www.youtube.com/fordbrasil" title="YouTube" target="_blank"><img src="img/youtube-squared-50.png"></a></li>
+                <li><a href="https://www.instagram.com/fordbrasil/" title="Instagram" target="_blank"><img src="img/instagram-logo-50.png"></a></li>
             </ul>
         </nav>
         <div>
