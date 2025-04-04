@@ -41,9 +41,9 @@
             <form onsubmit="Post(this);">
                 <input type="text" name="nome" id="nomeid" placeholder="NOME*" class="fordform" required>
                 <input type="email" name="email" placeholder="E-MAIL*" class="fordform" required>
-                <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
+                <input type="text" name="cpf" maxlength="14" placeholder="CPF*" class="fordform" required>
                 <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
-                <input type="number" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                <input type="number" name="telefone" maxlength="15" placeholder="TELEFONE*" class="fordform" required>
                 <select name="contato" class="fordform" required>
                     <option selected>COMO DESEJA SER CONTATADO</option>
                     <option>TELEFONE</option>

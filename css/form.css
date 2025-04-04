@@ -8,6 +8,29 @@
     font-size: 13px;
     padding: 5px;
 }
+.forms {
+    /* formulario */
+ /* border: solid 2px rebeccapurple; */
+ opacity: 0; /* começa invisível */
+ transform: translateY(50px); /* posição inicial para animar */
+ animation: subirForm 1s ease-out forwards;
+}
+
+
+/* efeito para subida */
+@keyframes subirForm {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 
 select.fordform {
     width: 310px;

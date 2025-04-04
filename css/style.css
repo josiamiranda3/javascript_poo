@@ -28,6 +28,7 @@ div#carousel {
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
+    border-radius: 50px;
 }
 
 div#carousel img {
